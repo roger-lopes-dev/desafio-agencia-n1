@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./js/mobile-menu.js" />
+  <link rel="stylesheet" href="./js/modal.js" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Agência N1</title>
+</head>
+
+<body>
+  <header class="header container">
+    <a href="#"><img id="header-logo" src="./img/logo-n1.png"></a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburguer"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Presentes</a></li>
+        <li><a style="color: #4ec2dd; font-weight: 900; text-transform: uppercase;" href="#">Sale</a></li>
+      </ul>
+    </nav>
+    <form class="form-header">
+      <button><img src="./svg/search.svg" alt="" /></button>
+      <input class="input-header" type="text" name="search" placeholder="Digite o que procura" />
+    </form>
+    <div class="shopping-cart">
+      <img src="./svg/shopping-cart.svg" alt="" />
+      <p id="carrinho" class="detail"></p>
+    </div>
+
+  </header>
+
+  <div id="content">
+    <div class="content-modal">
+      <i class="fa-solid fa-circle-check fa-4x confirm"></i>
+      <p style="color: #4ec2dd; margin-top: 2em; font-weight: 700">
+        PRODUTO ADICIONADO AO CARRINHO
+      </p>
+      <div class="css-modal-btn">
+        <a title="ok">
+          <button onclick="modalclose()" class="btn btn-primary btn-md">OK</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <span class="separator"></span>
+
+  <main class="container">
+    <nav>
+      <ul class="page-nav">
+        <li><a href="">N1</a></li> <span>></span>
+        <li><a href="">action figures</a></li> <span>></span>
+        <li><a id="active" href="">Super Mario</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <section class="container page-buy">
+    <div class="page-img-smaller">
+      <img src="./img/Action-Figures---Super-Mario.jpg" alt="">
+    </div>
+    <div class="page-img-bigger">
+      <img src="./img/Action-Figures---Super-Mario.jpg" alt="">
+    </div>
+
+    <div class="page">
+      <p class="page-title">Action Figure Mario Bros topzeira das galáxias</p>
+      <div class="page-price">
+        <p class="price">de R$ 189,90</p>
+        <span class="price">por <a href="#" class="active">R$ 149,90</a></span>
+        <button class="price-button"><a href="#">Compra ae</a></button>
+      </div>
+      <div class="page-freight">
+        <p class="page-freight-title">Calcule o frete</p>
+        <form class="page-freight-form">
+          <input class="input-1" type="number" placeholder="00000">
+          <input class="input-2" type="number" placeholder="000">
+          <button> <a class="page-freight-button" href="#">Calcular</a> </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="description-container">
+    <h1 class="description-title">Descrição do produto</h1>
+    <div class="description-product">
+      <p class="description-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed felis velit, mattis et libero eu, molestie placerat lorem. Praesent quis quam facilisis, consequat nisi vel, pellentesque metus. Sed aliquam scelerisque malesuada. Aliquam erat volutpat. Suspendisse aliquet sem non efficitur fermentum. Suspendisse sit amet odio et dolor suscipit lacinia. Praesent consequat sem vitae lectus dictum molestie. Vestibulum suscipit, nibh ac interdum interdum, arcu ante iaculis erat, eget tempus quam nisi vel quam. Aenean eget enim lectus. Cras id porta leo. Nam a ullamcorper dui. Proin in massa ac nibh condimentum hendrerit. Pellentesque tempus diam at ligula mattis venenatis. Sed sed ultrices turpis. Aliquam in semper risus.
+      </p>
+      <br>
+      <p class="description-paragraph">
+        Vestibulum finibus ullamcorper elit id bibendum. Nulla congue velit et dolor tempor mollis. Proin et ligula at sem consectetur maximus ac quis lectus. Morbi id scelerisque orci. Curabitur tincidunt, magna ut malesuada aliquam, sem enim mattis nulla, vulputate eleifend sem quam eget nunc. Aliquam vitae mi hendrerit, pulvinar ex vitae, fermentum sapien.
+      </p>
+    </div>
+    <h1 class="description-title">Quem viu, viu também</h1>
+    <div class="image-flex">
+      <div class="image">
+        <img src="./img/action-figure-doctor-strange.jpg" alt="">
+        <p class="image-title">Action Figure Doctor Strange e Burning Flame Set - S.H.Figuarts</p>
+        <span>de R$ 725,90</span>
+        <span id="image-active">por R$ 624,90</span>
+
+      </div>
+      <div class="image">
+        <img src="./img/Action-Figures---Super-Mario.jpg" alt="">
+        <p class="image-title">Action Figures - Super Mario Bros - Bandai</p>
+        <span>de R$ 189,90</span>
+        <span id="image-active">por R$ 149,90</span>
+      </div>
+      <div class="image">
+        <img src="./img/figura-street-fighter-ryu.jpg" alt="">
+        <p class="image-title">Figura Street Fighter Ryu</p>
+        <span>de R$ 5.500,20</span>
+        <span id="image-active">por R$ 5.259,00</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-image">
+      <img src="./img/logo-n1-white.png" alt="">
+    </div>
+    <div class="all-rights">
+      <p>Agência N1 - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="./JS/mobile-menu.js"></script>
+  <script src="./JS/modal.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none 0;
+  background-color: transparent;
+}
+
+#active {
+  color: #4ec2dd;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.separator::before {
+  content: "";
+  display: block;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 0.5rem;
+}
